@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "date-range-picker": [
+        "dist/date-range-picker"
+      ],
+      "date-range-picker/*": [
+        "dist/date-range-picker/*"
+      ]
+    }
   }
 }
