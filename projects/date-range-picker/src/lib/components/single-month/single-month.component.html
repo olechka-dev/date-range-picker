@@ -1,0 +1,7 @@
+<div *ngFor="let i of monthWeekNumbers">
+  <drp-single-date *ngFor="let day of monthRange.slice(i*7, (i+1)*7)"
+                   [singleDate]="day"
+                   [isDisabled]="getDisabledState(day)"
+                   (onDatePicked)="onDatePicked($event)"></drp-single-date>
+</div>
+

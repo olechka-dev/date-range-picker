@@ -2,16 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'drp-date-range-picker',
-  template: `
-    <p>
-      date-range-picker works!
-    </p>
-  `,
+  templateUrl: './date-range-picker.component.html',
   styles: []
 })
 export class DateRangePickerComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

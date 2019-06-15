@@ -1,0 +1,11 @@
+<div class="calendar-header">
+  <button (click)="switchMonth(-1)"><--</button>
+  <div>{{monthName}}</div>
+  <button (click)="switchMonth(1)">--></button>
+</div>
+
+<ng-container *ngIf="!!monthRange.length">
+  <drp-single-month
+    [monthRange]="monthRange"
+    [currentMonth]="currentMonth"></drp-single-month>
+</ng-container>

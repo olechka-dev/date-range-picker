@@ -8,7 +8,11 @@
       "sourceRoot": "projects/demo/src",
       "projectType": "application",
       "prefix": "drp",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -23,7 +27,7 @@
               "projects/demo/src/assets"
             ],
             "styles": [
-              "projects/demo/src/styles.css"
+              "projects/demo/src/styles.scss"
             ],
             "scripts": []
           },
@@ -79,7 +83,7 @@
             "tsConfig": "projects/demo/tsconfig.spec.json",
             "karmaConfig": "projects/demo/karma.conf.js",
             "styles": [
-              "projects/demo/src/styles.css"
+              "projects/demo/src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -134,6 +138,11 @@
       "root": "projects/date-range-picker",
       "sourceRoot": "projects/date-range-picker/src",
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "prefix": "drp",
       "architect": {
         "build": {
